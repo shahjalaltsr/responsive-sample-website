@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Work+Sans:ital,wght@0,400;0,500;1,600&display=swap');
+
+*{  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;}
+  header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .g3{
+    font-size: 3rem;
+  }
+  nav>ul{
+    display: flex;
+  }
+  nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+  }
+  nav li a{
+    text-decoration: dotted;
+    color: black;
+  }
+  
+
+
+  .banner-content{
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+  }
+  .banner-head{
+    font-size: 4rem;
+    font-weight: 800;
+    color: black;
+  }
+  .banner-tittle{
+    color: black;
+  }
+  .button-first{
+    background-color: rgba(234, 15, 15, 0.979);
+    font-size: xx-large;
+ border-radius: 8px;
+ padding: 20PX 25PX;
+ color: antiquewhite;
+ cursor: pointer;
+  }
+  .banner img{
+    margin-top: 50px;
+    width: 100%;
+  }
+  /*  responsive part */
+
+  @media screen and (max-width:576px) {
+    header{
+        padding: 0%;
+    }
+    nav {
+        flex-direction: column;
+    }
+  }
+  /* -- team*/
+  .team{
+    display: flex;
+    align-items: center;
+  }
+  .team-contain{
+text-align: center;
+margin-top: 200px;
+  }
+  .team-image{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+  .team-tittle{
+font-size: xx-large;
+  }
+  .team-para{
+font-size: medium;
+color: black;
+font-weight: 800;
+  }
+  
+  @media screen and (max-width:576px) {
+    .team{
+        flex-direction: column;
+    }
+    .team-image{
+        align-items: center;
+    }
+  }
+
+.footer-first{
+    text-align: center;
+}
+
+  .footer-para{
+    font: medium;
+    font-weight: 800;
+    color: black;
+    margin-top: 10px;
+
+  }
+  .footer-img{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:576px){
+    .footer-img{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+  }
